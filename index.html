@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Play</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- <div class="onlyBigscreen"> -->
+
+    <h1 class="header">Smash that Keyboard</h1>
+    <div class="keys__container">
+
+        <div class="keys keys_top">
+            
+            <div class="key" data-key="81">
+                <kbd>Q</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="87">
+                <kbd>W</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="69">
+                <kbd>E</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="82">
+                <kbd>R</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="84">
+                <kbd>T</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="89">
+                <kbd>Y</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="85">
+                <kbd>U</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="73">
+                <kbd>I</kbd>
+                <span>BOOM!</span>
+            </div><div class="key" data-key="79">
+                <kbd>O</kbd>
+                <span>BOOM!</span>
+            </div><div class="key" data-key="80">
+                <kbd>P</kbd>
+                <span>BOOM!</span>
+            </div>
+        </div>
+
+        <div class="keys keys_middle">
+            
+            <div class="key" data-key="65">
+                <kbd>A</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="83">
+                <kbd>S</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="68">
+                <kbd>D</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="70">
+                <kbd>F</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="71">
+                <kbd>G</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="72">
+                <kbd>H</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="74">
+                <kbd>J</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="75">
+                <kbd>K</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="76">
+                <kbd>L</kbd>
+                <span>BOOM!</span>
+            </div>
+        </div>
+        <div class="keys keys_bottom">
+            
+            <div class="key" data-key="90">
+                <kbd>Z</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="88">
+                <kbd>X</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="67">
+                <kbd>C</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="86">
+                <kbd>V</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="66">
+                <kbd>B</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="78">
+                <kbd>N</kbd>
+                <span>BOOM!</span>
+            </div>
+            <div class="key" data-key="77">
+                <kbd>M</kbd>
+                <span>BOOM!</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="club-btn__container">
+        <button class="club_btn" onclick="callAnimate()">Party Mode</button>
+    </div>
+
+    <audio class="party" src="/audio/party.mp3" loop></audio>
+
+    <div class="audio__container">
+        <audio src="/audio/1.mp3" data-key="81"></audio>
+        <audio src="/audio/2.mp3" data-key="87"></audio>
+        <audio src="/audio/3.mp3" data-key="69"></audio>
+        <audio src="/audio/4.mp3" data-key="82"></audio>
+        <audio src="/audio/5.mp3" data-key="84"></audio>
+        <audio src="/audio/6.mp3" data-key="89"></audio>
+        <audio src="/audio/7.mp3" data-key="85"></audio>
+        <audio src="/audio/8.mp3" data-key="73"></audio>
+        <audio src="/audio/9.mp3" data-key="79"></audio>
+        <audio src="/audio/10.mp3" data-key="80"></audio>
+        <audio src="/audio/11.mp3" data-key="65"></audio>
+        <audio src="/audio/12.mp3" data-key="83"></audio>
+        <audio src="/audio/13.mp3" data-key="68"></audio>
+        <audio src="/audio/14.mp3" data-key="70"></audio>
+        <audio src="/audio/15.mp3" data-key="71"></audio>
+        <audio src="/audio/16.mp3" data-key="72"></audio>
+        <audio src="/audio/17.mp3" data-key="74"></audio>
+        <audio src="/audio/18.mp3" data-key="75"></audio>
+        <audio src="/audio/19.mp3" data-key="76"></audio>
+        <audio src="/audio/20.mp3" data-key="90"></audio>
+        <audio src="/audio/21.mp3" data-key="88"></audio>
+        <audio src="/audio/22.mp3" data-key="67"></audio>
+        <audio src="/audio/23.mp3" data-key="86"></audio>
+        <audio src="/audio/24.wav" data-key="66"></audio>
+        <audio src="/audio/25.mp3" data-key="78"></audio>
+        <audio src="/audio/26.mp3" data-key="77"></audio>
+    </div>
+
+  <!-- </div>
+
+  <div class="smallmessage">
+      <h1>Sorry This website is only to be used on laptops</h1>
+  </div> -->
+<footer>
+    &copy;Ashwinkumar A Pillai
+</footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>

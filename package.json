@@ -1,0 +1,14 @@
+{
+  "name": "lets_play",
+  "version": "1.0.0",
+  "description": "Let's make keyboard a musical instrument",
+  "main": "index.js",
+  "scripts": {
+    "csass":"node-sass css/style.scss css/main.css -w"
+  },
+  "author": "Ashwinkumar A Pillai",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
