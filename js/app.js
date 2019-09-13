@@ -101,22 +101,9 @@ function callAnimate(){
         }, 200);
         setInterval(() => {
             m++;
-            if(m == 90) {
-                initphase6();
+            if(m == 91) {
+                phase6();
             }
-        }, 201);
-    }
-    
-    function initphase6() {
-        var n = 65;
-        setInterval(() => {
-            phase6(n);
-        }, 200);
-        setInterval(() => {
-            n++;
-            // if(l == 90) {
-            //     initphase6();
-            // }
         }, 201);
     }
     
@@ -144,14 +131,24 @@ function callAnimate(){
         key.classList.remove('pressed-4');
     }
     
-    function phase6(n) {
-        const key = document.querySelector(`.key[data-key="${n}"]`);
-        key.classList.add('pressed-6');
+    function phase6() {
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => {
+            key.classList.add('pressed-6');
+        });
     
         const rest = document.querySelector('.return');
         setTimeout(() => {
+            keys.forEach(key => {
+                key.classList.add('pressed-3');
+            });
             rest.style.display = "block";
-        }, 5000);
+        }, 4900);
+
+        const party = document.querySelector('.party');
+        party.onended = () => {
+            reset();
+        }
     }
 
 function reset() {
@@ -165,6 +162,7 @@ function reset() {
 
     keys.forEach(key => {
         key.classList.remove('pressed-6');
+        key.classList.remove('.pressed-3');
     });
     
     party.pause();
