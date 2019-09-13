@@ -162,7 +162,7 @@ function reset() {
 
     keys.forEach(key => {
         key.classList.remove('pressed-6');
-        key.classList.remove('.pressed-3');
+        key.classList.remove('pressed-3');
     });
     
     party.pause();
