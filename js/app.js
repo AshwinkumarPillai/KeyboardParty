@@ -12,7 +12,7 @@ window.addEventListener('keydown', (e) => {
             key.classList.remove('pressed');
             audio.currentTime = 0;
             audio.pause();
-        },200);
+        },700);
     } 
 
 });
